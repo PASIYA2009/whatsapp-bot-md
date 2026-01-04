@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html><head><title>PASIYA MD Pair Web</title>
+<style>body{font-family:sans-serif;background:#0f172a;color:#fff;text-align:center;padding:40px}
+input,button{padding:10px;margin:10px;border-radius:6px}</style></head>
+<body>
+<h1>🤖 PASIYA MD Pair Web</h1>
+<p>Enter number with country code</p>
+<input id="n" placeholder="947XXXXXXXX"><button onclick="go()">Generate</button>
+<pre id="o"></pre>
+<script>
+async function go(){
+ const r=await fetch('/pair?number='+document.getElementById('n').value)
+ const j=await r.json()
+ document.getElementById('o').innerText = j.code || j.error
+}
+</script>
+</body></html>

@@ -1,0 +1,8 @@
+{
+  "botName": "PASIYA MD",
+  "owner": "PASINDU ESHAN",
+  "footer": "\u26a1 POWERED BY PASINDU ESHAN",
+  "mode": "public",
+  "aiProvider": "openai",
+  "openaiApiKey": "PUT_YOUR_API_KEY_HERE"
+}
